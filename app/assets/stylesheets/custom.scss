@@ -1,0 +1,56 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: White;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+h1{
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#links {
+  color: black;
+  &:hover{
+    color: darkgray;
+  }
+}
+#mood {
+  font-size: 8em;
+  letter-spacing: -2px;
+  color: slateblue;
+}
+
+#index{
+  font-size: 1em;
+  letter-spacing: -1px;
+  color: mediumslateblue;
+}
+#timestamp {
+  font-size: 1em;
+  letter-spacing: -1px;
+  color: mediumslateblue;
+}
+
+hr {
+  border: none;
+  height:2px;
+  color: gray;
+  background-color: gray;
+}

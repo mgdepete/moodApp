@@ -1,0 +1,16 @@
+<html lang="en">
+    <body>
+        <div class="header">
+          <div class="center jumbotron">
+            <h1>Your Current Mood</h1>
+          </div>
+        </div>
+        <div class="message" >
+          <div class="container" >
+            <p class="content" id="mood" ><%=  @message.content %></p>
+            <p class="color_hex" id="mood" ><%= @message.color_hex %></p>
+            <p class="time" id="timestamp"><%= @message.created_at %></p>
+          </div>
+        </div>
+    </body>
+</html>
