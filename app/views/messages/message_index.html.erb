@@ -9,13 +9,22 @@
     <div class="messages">
       <div class="container" >
         <% @messages.each do |message| %>
-          <div class="message" >
-            <p class="content" id="index" ><%= message.content %></p>
-            <p class="color_hex" id="index" ><%= message.color_hex %></p>
-            <p class="time" id="index"><%= message.created_at %></p>
-            <div class="time" id="index">
-              <%= link_to "View Message", message_path(message.id), id: 'links' %>
-            </div>
+            <div class="message" >
+              <p>
+                Content:
+                <span style="color:<%= message.color_hex %>"> <%= message.content %></span>
+              </p>
+              <p class="color_hex" >
+                Color selected:
+                <span style="color:mediumslateblue"> <%= message.color_hex %></span>
+              </p>
+              <p class="time">
+                Time Created:
+                <span style="color:mediumslateblue"> <%= message.created_at %></span>
+              </p>
+              <div class="time" id="index">
+                <%= link_to "View Message", message_path(message.id), id: 'links' %>
+              </div>
             <hr>
           </div>
         <% end %>

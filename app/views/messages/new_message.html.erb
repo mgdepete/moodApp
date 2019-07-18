@@ -7,15 +7,16 @@
 <div class="create">
   <div class="container">
     <%= form_for(@message) do |f| %>
+
       <div class="field">
         <%= f.label :Enter_your_mood_below %><br>
         <%= f.text_field :content, size: "10x1", id: "mood"%><br><br>
         <%= f.label :Pick_a_color_to_match %><br>
-        <%= f.color_field :color_hex, size:"10x3", id: "mood" %>
+        <%= f.color_field :color_hex%>
       </div>
       <div class="actions">
         <br>
-        <%= f.submit "Track Mood" %>
+        <%= f.submit "Track Mood", class: 'btn btn-primary', style: "background-color:mediumslateblue" %>
       </div>
     <% end %>
   </div>
